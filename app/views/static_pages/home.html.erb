@@ -5,7 +5,40 @@
     Someone to see ya, honey. A Jedi, by the looks of him.
   </h2>
 
-  <p><%= @response %></p>
+  <div id='films'>
+  <% @response.each do |s| %>
+  <div id='film_<%= s['episode_id'] %>'>
+  <p>Name: <%= s['title'] %> (<%= s['release_date'].split('-')[0] %>) </p>
+  <p>Episode: <%= s['episode_id'] %></p>
+  <p>Director: <%= s['director'] %></p>
+  <p>Producer(s): <%= s['producer'] %></p>
+
+  <br>
+  <% end %>
+
+  </div>
+
+   <%
+=begin%>
+ <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Name</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @response.each do |s| %>
+        <tr>
+          <td><%= s['title'] %></td>
+          <td><%= s['episode_id'] %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table> 
+<%
+=end%>
 
   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
 </div>
