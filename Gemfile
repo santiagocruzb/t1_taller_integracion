@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
 # bootstrap
 gem 'bootstrap-sass'
 
+gem 'rest-client'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
