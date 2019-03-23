@@ -1,3 +1,5 @@
+<% provide(:title, "Home") %>
+
 <div class="center jumbotron">
   <h1>Dexter Jettster's</h1>
 
@@ -6,39 +8,18 @@
   </h2>
 
   <div id='films'>
-  <% @response.each do |s| %>
-  <div id='film_<%= s['episode_id'] %>'>
-  <p>Name: <%= s['title'] %> (<%= s['release_date'].split('-')[0] %>) </p>
-  <p>Episode: <%= s['episode_id'] %></p>
-  <p>Director: <%= s['director'] %></p>
-  <p>Producer(s): <%= s['producer'] %></p>
+    <% @response.each do |s| %>
+    <div id='film_<%= s['episode_id'] %>'>
+      <%= link_to s['title'], film_path(s['episode_id']), target: :_blank %>
+      <p>Episode: <%= s['episode_id'] %></p>
+      <p>Director: <%= s['director'] %></p>
+      <p>Producer(s): <%= s['producer'] %></p>
 
-  <br>
-  <% end %>
-
+      <br>
+    </div>
+    <% end %>
   </div>
 
-   <%
-=begin%>
- <table class="table table-hover">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Name</th>
-          <th>ID</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @response.each do |s| %>
-        <tr>
-          <td><%= s['title'] %></td>
-          <td><%= s['episode_id'] %></td>
-        </tr>
-        <% end %>
-      </tbody>
-    </table> 
-<%
-=end%>
 
   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
 </div>

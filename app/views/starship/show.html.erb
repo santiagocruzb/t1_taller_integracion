@@ -1,0 +1,40 @@
+<% convertidor = { "1" => "4", 
+            "2" => "5", 
+            "3" => "6", 
+            "4" => "1", 
+            "5" => "2", 
+            "6" => "3", 
+            "7" => "7" }
+            %>
+
+<% provide(:title, @general['name']) %>
+
+<h1>Starship: <%= @general['name']%></h1>
+
+<div id='general_info'>
+    <h2>General Information</h2>
+    <h4>Model : <%= @general['model']%></h4>
+    <h4>Manufacturer : <%= @general['manufacturer']%></h4>
+    <h4>Cost in credits : <%= @general['cost_in_credits']%></h4>
+    <h4>Lenght : <%= @general['lenght']%> cm</h4>
+    <h4>Crew : <%= @general['crew']%></h4>
+    <h4>Passengers : <%= @general['passengers']%></h4>
+    <h4>Cargo Capacity : <%= @general['cargo_capacity']%></h4>
+    <h4>Consumables : <%= @general['consumables']%></h4>
+    <h4>Hyperdrive rating : <%= @general['hyperdrive_rating']%></h4> 
+    <br>
+</div>
+
+<div id='films'>
+    <h2>Films where <%= @general['name']%> appears</h2>
+    <% @films.each do |f| %>
+        <h4><%= link_to f['title'], film_path(convertidor[f['url'].split('/')[-1]]), target: :_blank %></h4>
+    <% end %>
+</div>
+
+<div id='character'>
+    <h2>People who piloted <%= @general['name']%></h2>
+    <% @characters.each do |c| %>
+        <h4><%= link_to c['name'], character_path(c['url'].split('/')[-1]), target: :_blank %></h4>
+    <%end%>
+</div>

@@ -1,0 +1,37 @@
+<% convertidor = { "1" => "4", 
+            "2" => "5", 
+            "3" => "6", 
+            "4" => "1", 
+            "5" => "2", 
+            "6" => "3", 
+            "7" => "7" }
+            %>
+
+<% provide(:title, @general['name']) %>
+
+<h1>Character: <%= @general['name']%></h1>
+
+<div id='general_info'>
+    <h2>General Information</h2>
+    <h4>Height: <%= @general['height'] %> cm </h4>
+    <h4>Weight on Coruscant: <%= @general['mass'] %> kg </h4>
+    <h4>Hair color: <%= @general['hair_color'] %> </h4>
+    <h4>Skin color: <%= @general['skin_color'] %> </h4>
+    <h4>Gender: <%= @general['gender'] %> </h4>
+    <h4>YOB: <%= @general['birth_year'] %> </h4> 
+    <br>
+</div>
+
+<div id='films'>
+    <h2>Films where <%= @general['name']%> appears</h2>
+    <% @films.each do |f| %>
+        <h4><%= link_to f['title'], film_path(convertidor[f['url'].split('/')[-1]]) %></h4>
+    <% end %>
+</div>
+
+<div id='starships'>
+    <h2>Starships related to <%= @general['name']%></h2>
+    <% @starships.each do |s| %>
+        <h4><%= link_to s['name'], starship_path(s['url'].split('/')[-1]) %></h4>
+    <% end %>
+</div>
