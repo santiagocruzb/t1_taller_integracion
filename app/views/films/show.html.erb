@@ -1,1 +1,28 @@
-<h1><%= @main['title']%> (<%=@main['release_date'].split('-')[0]%>)</h1>
+<h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+
+<div id='general_info'>
+<h2>General Information</h2>
+<h3>Director: <%= @general['director'] %> </h3>
+<h4>Producer(s): <%= @general['producer'] %></h4>
+<br>
+</div>
+
+<div id='characters'>
+<h2>Characters</h2>
+<% @characters.each do |c| %>
+<div id='character_<%= c['name'] %>'> 
+<h4>Name: <%= c['name'] %> </h4>
+<h4>Height: <%= c['height'] %> cm </h4>
+<h4>Weight on Coruscant: <%= c[''] %> kg </h4>
+<h4>Hair color: <%= c['hair_color'] %> </h4>
+<h4>Skin color: <%= c['skin_color'] %> </h4>
+<h4>Gender: <%= c['gender'] %> </h4>
+<h4>YOB: <%= c['birth_year'] %> </h4>
+<br>
+</div>
+<% end %>
+</div>
+
+
+
+<%= %>

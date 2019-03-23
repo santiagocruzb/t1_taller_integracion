@@ -2132,3 +2132,324 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 1826ms (Views: 26.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-03-23 16:39:47 -0300
+Processing by StaticPagesController#home as HTML
+Started GET "/films/4" for ::1 at 2019-03-23 16:39:49 -0300
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2062ms (Views: 207.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1799ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:39:53 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1593ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:40:44 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1647ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:43:06 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1377ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:44:33 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1586ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/films_controller.rb:22:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:44:51 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1681ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/films_controller.rb:22:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:45:20 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1574ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/films_controller.rb:22:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:46:24 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1471ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `each' for nil:NilClass):
+  
+app/controllers/films_controller.rb:22:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:47:03 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1885ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:47:48 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1489ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:48:19 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1471ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:49:06 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1676ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:49:17 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1672ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:49:40 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1848ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `thread' for #<FilmsController:0x00007fd09bc70100>
+Did you mean?  threads
+               head):
+  
+app/controllers/films_controller.rb:24:in `block in show'
+app/controllers/films_controller.rb:23:in `each'
+app/controllers/films_controller.rb:23:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:51:38 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1903ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `thread' for #<FilmsController:0x00007fd09bc81680>
+Did you mean?  threads
+               head):
+  
+app/controllers/films_controller.rb:26:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:51:49 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1767ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:52:14 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1765ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:53:13 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 1916ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `thread' for #<FilmsController:0x00007fd09a7c4468>
+Did you mean?  threads
+               head):
+  
+app/controllers/films_controller.rb:24:in `block in show'
+app/controllers/films_controller.rb:23:in `each'
+app/controllers/films_controller.rb:23:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 16:53:27 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 2030ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:55:24 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 12919ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 16:58:49 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2547ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 17:03:47 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2979ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 17:04:02 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2808ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 17:10:29 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 4460ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 17:18:40 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 3221ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `info_naves' for #<FilmsController:0x00007fd0984da650>
+Did you mean?  info_personajes):
+  
+app/controllers/films_controller.rb:71:in `show'
+Started GET "/films/4" for ::1 at 2019-03-23 17:18:58 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2997ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 17:22:39 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2893ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-23 17:24:51 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2979ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
