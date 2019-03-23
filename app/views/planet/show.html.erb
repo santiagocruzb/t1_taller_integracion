@@ -1,0 +1,38 @@
+<% convertidor = { "1" => "4", 
+            "2" => "5", 
+            "3" => "6", 
+            "4" => "1", 
+            "5" => "2", 
+            "6" => "3", 
+            "7" => "7" }
+            %>
+<% provide(:title, @general['name']) %>
+
+<h1>Planet: <%= @general['name']%></h1>
+
+<div id='general_info'>
+    <h2>General Information</h2>
+    <h4>Rotation period: <%= @general['rotation_period'] %></h4>
+    <h4>Orbital period: <%= @general['orbital_period'] %></h4>
+    <h4>Diameter: <%= @general['diameter'] %> </h4>
+    <h4>Climate: <%= @general['climate'] %> </h4>
+    <h4>Gravity: <%= @general['gravity'] %> </h4>
+    <h4>Terrain: <%= @general['terrain'] %> </h4> 
+    <h4>Surface: <%= @general['surface_water'] %> </h4> 
+    <h4>Population: <%= @general['population'] %> </h4> 
+    <br>
+</div>
+
+<div id='films'>
+    <h2>Films where <%= @general['name']%> appears</h2>
+    <% @films.each do |f| %>
+        <h4><%= link_to f['title'], film_path(convertidor[f['url'].split('/')[-1]]), target: :_blank %></h4>
+    <% end %>
+</div>
+
+<div id='character'>
+    <h2>People who is related to <%= @general['name']%></h2>
+    <% @characters.each do |c| %>
+        <h4><%= link_to c['name'], character_path(c['url'].split('/')[-1]), target: :_blank %></h4>
+    <%end%>
+</div>

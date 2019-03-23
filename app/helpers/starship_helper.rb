@@ -1,0 +1,2 @@
+module StarshipHelper
+end

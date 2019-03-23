@@ -36,31 +36,33 @@ class FilmsController < ApplicationController
         threads_personajes.each(&:join)
         @characters = info_personajes
 
-        # threads_naves = []
-        # info_naves = []
-        # naves = respuesta['starships']
-        # naves.each do |n|
-        #     threads_naves << Thread.new{
-        #         info = RestClient.get n
-        #         info = JSON.parse(info)
-        #         info_naves << info
-        #     }    
-        # end
-        # threads_naves.each(&:join)
+        threads_naves = []
+        info_naves = []
+        naves = respuesta['starships']
+        naves.each do |n|
+            threads_naves << Thread.new{
+                info = RestClient.get n
+                info = JSON.parse(info)
+                info_naves << info
+            }    
+        end
+        threads_naves.each(&:join)
+        @starships = info_naves
 
-        # especies = respuesta['species']
+        
 
-        # threads_especies = []
-        # info_especies = []
-        # especies = respuesta['starships']
-        # especies.each do |n|
-        #     threads_especies << Thread.new{
-        #         info = RestClient.get n
-        #         info = JSON.parse(info)
-        #         info_especies << info
-        #     }    
-        # end
-        # threads_especies.each(&:join)
+        threads_planetas = []
+        info_planetas = []
+        planetas = respuesta['planets']
+        planetas.each do |n|
+            threads_planetas << Thread.new{
+                info = RestClient.get n
+                info = JSON.parse(info)
+                info_planetas << info
+            }    
+        end
+        threads_planetas.each(&:join)
+        @planets = info_planetas
 
 
         # @personajes = info_personajes
