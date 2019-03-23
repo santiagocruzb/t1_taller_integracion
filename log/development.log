@@ -378,3 +378,17 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 176ms (Views: 172.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-03-23 09:33:21 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 194ms (Views: 188.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-23 09:35:44 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 162ms (Views: 158.1ms | ActiveRecord: 0.0ms)
+
+
