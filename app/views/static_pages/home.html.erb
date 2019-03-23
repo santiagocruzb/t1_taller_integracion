@@ -8,7 +8,7 @@
   <div id='films'>
   <% @response.each do |s| %>
   <div id='film_<%= s['episode_id'] %>'>
-  <p>Name: <%= s['title'] %> (<%= s['release_date'].split('-')[0] %>) </p>
+  <%= link_to s['title'], film_path(s['episode_id']) %>
   <p>Episode: <%= s['episode_id'] %></p>
   <p>Director: <%= s['director'] %></p>
   <p>Producer(s): <%= s['producer'] %></p>

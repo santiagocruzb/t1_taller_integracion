@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get  '/help',    to: 'static_pages#help', as: 'help'
 
   get  '/films', to: 'films#index'
-  get  '/films/:id', to: 'films#show'
+  get  '/films/:id', to: 'films#show', as: 'film'
   
   # resources :films
   
