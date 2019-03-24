@@ -1,11 +1,14 @@
 class FilmsController < ApplicationController
     def index
+        respuesta = RestClient.get "https://swapi.co/api/films"
+    
+        respuesta = JSON.parse(respuesta)
+    
+        @response = respuesta['results'].sort_by { |k| k["episode_id"] }
 
     end
 
     def show
-        # vamos a mantener el order segun las originales
-        # la primera es la nueva esperanza y asi..
         convertidor = { "1" => "4", 
             "2" => "5", 
             "3" => "6", 
@@ -34,7 +37,7 @@ class FilmsController < ApplicationController
                 }
         end
         threads_personajes.each(&:join)
-        @characters = info_personajes
+        @characters = info_personajes.sort_by { |k| k["url"].split('/')[-1].to_i }
 
         threads_naves = []
         info_naves = []
@@ -47,9 +50,7 @@ class FilmsController < ApplicationController
             }    
         end
         threads_naves.each(&:join)
-        @starships = info_naves
-
-        
+        @starships = info_naves.sort_by { |k| k["url"].split('/')[-1].to_i }
 
         threads_planetas = []
         info_planetas = []
@@ -62,29 +63,7 @@ class FilmsController < ApplicationController
             }    
         end
         threads_planetas.each(&:join)
-        @planets = info_planetas
-
-
-        # @personajes = info_personajes
-
-        # puts "info personajes:"
-        # puts info_personajes
-        # puts ""
-        # puts 
-        # puts "info naves:"
-        # puts info_naves
-        # puts ""
-        # puts 
-        # puts "info especies:"
-        # puts info_especies
-        # puts ""
-        # puts 
-        
-        
-        # thread = Thread.new{ RestClient.get "https://swapi.co/api/people/1/"}
-        # puts thread
-        
-        # sleep(10)
+        @planets = info_planetas.sort_by { |k| k["url"].split('/')[-1].to_i }
 
     end
 

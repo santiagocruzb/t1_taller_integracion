@@ -1,0 +1,10 @@
+<% provide(:title, "Starships") %>
+
+<div class="container">
+    <h2>Starships</h2>
+    <% @starships.each do |starship| %>
+        <div class="row">
+        <%= link_to starship["name"], starship_path(starship["id"]), target: :_blank %>
+        </div>
+    <% end %>
+</div>

@@ -1,0 +1,10 @@
+<% provide(:title, "Characters") %>
+
+<div class="container">
+    <h2>Characters</h2>
+    <% @characters.each do |character| %>
+        <div class="row">
+        <%= link_to character["name"], character_path(character["id"]), target: :_blank %>
+        </div>
+    <% end %>
+</div>
