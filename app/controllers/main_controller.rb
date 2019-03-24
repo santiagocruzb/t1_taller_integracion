@@ -25,7 +25,7 @@ class MainController < ApplicationController
             respuesta =  RestClient.get url, {params: {'search' => termino}}
             respuesta = JSON.parse(respuesta)
             respuesta['results'].first(5).each do |p|
-                local = {"name" => p['name'], "url"=> 'characters/'.concat(p['url'].split('/')[-1])}
+                local = {"name" => p['name'], "id"=> p['url'].split('/')[-1]}
                 @characters << local
             end
         }
@@ -36,7 +36,7 @@ class MainController < ApplicationController
             respuesta =  RestClient.get url, {params: {'search' => termino}}
             respuesta = JSON.parse(respuesta)
             respuesta['results'].first(5).each do |p|
-                local = {"name" => p['name'], "url" =>  'planets/'.concat(p['url'].split('/')[-1])}
+                local = {"name" => p['name'], "id" =>  p['url'].split('/')[-1]}
                 @planets << local
             end
         }
@@ -47,7 +47,7 @@ class MainController < ApplicationController
             respuesta =  RestClient.get url, {params: {'search' => termino}}
             respuesta = JSON.parse(respuesta)
             respuesta['results'].first(5).each do |p|
-                local = {"name" => p['title'], "url" => 'films/'.concat(convertidor[p['url'].split('/')[-1]])}
+                local = {"name" => p['title'], "id" => convertidor[p['url'].split('/')[-1]]}
                 @films << local
             end
         }
@@ -59,7 +59,7 @@ class MainController < ApplicationController
             respuesta =  RestClient.get url, {params: {'search' => termino}}
             respuesta = JSON.parse(respuesta)
             respuesta['results'].first(5).each do |p|
-                local = {"name" => p['name'], "url" =>  'starships/'.concat(p['url'].split('/')[-1])}
+                local = {"name" => p['name'], "id" =>  p['url'].split('/')[-1]}
                 @starships << local
             end
         }

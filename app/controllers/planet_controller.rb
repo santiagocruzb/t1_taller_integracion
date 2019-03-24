@@ -28,8 +28,7 @@ class PlanetController < ApplicationController
                 a_retornar << local
             end
         end
-        a_retornar = a_retornar.sort_by { |k| k["id"] }
-        @planets = a_retornar
+        @planets = a_retornar.sort_by { |k| k["url"].split('/')[-1].to_i }
   
         
     end
@@ -53,7 +52,7 @@ class PlanetController < ApplicationController
                 }
         end
         threads_personajes.each(&:join)
-        @characters = info_personajes
+        @characters = info_personajes.sort_by { |k| k["url"].split('/')[-1].to_i }
 
 
         threads_peliculas = []
@@ -67,7 +66,7 @@ class PlanetController < ApplicationController
             }    
         end
         threads_peliculas.each(&:join)
-        @films = info_peliculas
+        @films = info_peliculas.sort_by { |k| k["episode_id"].to_i }
 
     end
 

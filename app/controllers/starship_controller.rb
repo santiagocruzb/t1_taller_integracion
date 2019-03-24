@@ -27,8 +27,8 @@ class StarshipController < ApplicationController
         a_retornar << local
       end
     end
-    a_retornar = a_retornar.sort_by { |k| k["id"] }
-    @starships = a_retornar
+    a_retornar = a_retornar.sort_by { |k| k["url"].split('/')[-1].to_i }
+
   end
 
 
@@ -51,7 +51,7 @@ class StarshipController < ApplicationController
             }
     end
     threads_personajes.each(&:join)
-    @characters = info_personajes
+    @characters = info_personajes.sort_by { |k| k["url"].split('/')[-1].to_i }
 
     threads_peliculas = []
     info_peliculas = []
@@ -64,7 +64,7 @@ class StarshipController < ApplicationController
         }    
     end
     threads_peliculas.each(&:join)
-    @films = info_peliculas
+    @films = info_peliculas.sort_by { |k| k["episode_id"].to_i }
 
   end
 end

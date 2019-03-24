@@ -37,7 +37,7 @@ class FilmsController < ApplicationController
                 }
         end
         threads_personajes.each(&:join)
-        @characters = info_personajes
+        @characters = info_personajes.sort_by { |k| k["url"].split('/')[-1].to_i }
 
         threads_naves = []
         info_naves = []
@@ -50,7 +50,7 @@ class FilmsController < ApplicationController
             }    
         end
         threads_naves.each(&:join)
-        @starships = info_naves
+        @starships = info_naves.sort_by { |k| k["url"].split('/')[-1].to_i }
 
         threads_planetas = []
         info_planetas = []
@@ -63,7 +63,7 @@ class FilmsController < ApplicationController
             }    
         end
         threads_planetas.each(&:join)
-        @planets = info_planetas
+        @planets = info_planetas.sort_by { |k| k["url"].split('/')[-1].to_i }
 
     end
 

@@ -51,7 +51,7 @@ class CharacterController < ApplicationController
         }    
     end
     threads_naves.each(&:join)
-    @starships = info_naves
+    @starships = info_naves.sort_by { |k| k["url"].split('/')[-1].to_i }
 
 
 
@@ -66,7 +66,7 @@ class CharacterController < ApplicationController
         }    
     end
     threads_peliculas.each(&:join)
-    @films = info_peliculas
+    @films = info_peliculas.sort_by { |k| k["episode_id"] }
   
     
   end
