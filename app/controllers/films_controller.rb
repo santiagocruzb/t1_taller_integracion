@@ -1,5 +1,10 @@
 class FilmsController < ApplicationController
     def index
+        respuesta = RestClient.get "https://swapi.co/api/films"
+    
+        respuesta = JSON.parse(respuesta)
+    
+        @response = respuesta['results'].sort_by { |k| k["episode_id"] }
 
     end
 

@@ -1,5 +1,37 @@
 class CharacterController < ApplicationController
 
+  def index
+    url = "https://swapi.co/api/people/"
+    respuesta = RestClient.get url
+    respuesta = JSON.parse(respuesta)
+    cantidad = respuesta["count"].to_f
+    paginas = cantidad / 10.0
+    paginas = paginas.ceil
+
+    threads = []
+    resultados_paginas = []
+    (1..paginas).each do |numero|
+      threads << Thread.new{
+        url = "https://swapi.co/api/people/"
+        respuesta = RestClient.get url, {params: {'page' => numero}}
+        respuesta = JSON.parse(respuesta)
+        datos = respuesta["results"]
+        resultados_paginas << datos
+      }
+    end
+
+    a_retornar = []
+    threads.each(&:join)
+    resultados_paginas.each do |pagina|
+      pagina.each do |resultado|
+        local = {"name" => resultado["name"], "id" => resultado["url"].split('/')[-1]}
+        a_retornar << local
+      end
+    end
+    a_retornar = a_retornar.sort_by { |k| k["id"] }
+    @characters = a_retornar
+  end
+
   def show
     numero = params[:id]
     url = "https://swapi.co/api/people/".concat(numero)
