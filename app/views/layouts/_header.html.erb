@@ -3,6 +3,18 @@
     <%= link_to "DJ | DB", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
+        
+
+        <li>
+          <div id="donka" class="input-field" style="padding-top: 10px;"><%= form_with url: search_path, local: true, method: :get, html: {class: "form-group"} do |form| %>
+                    <%= form.text_field :q, placeholder: "Search", data: {behavior: "autocomplete"}, class: "form-control" %>
+              </div>
+            </li>
+            <li>
+              <div style="padding-top: 10px; padding-left: 10px;">
+              <%= form.button "Seach", class: "btn btn-outline-success my-2 my-sm-0" %>
+              <% end %>
+        <li>
         <li><%= link_to "Home",   root_path %></li>
         <!-- <li><%= link_to "Help",    help_path %></li>
         <li><%= link_to "Log in", '#' %></li>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get :search, controller: :main
   get 'specie/show'
   get 'character/show'
   get 'starship/show'

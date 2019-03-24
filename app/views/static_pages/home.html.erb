@@ -6,22 +6,22 @@
   <h2>
     Someone to see ya, honey. A Jedi, by the looks of him.
   </h2>
+</div>
 
+<div>
+  <h2>Films</h2>
   <div id='films'>
     <% @response.each do |s| %>
-    <div id='film_<%= s['episode_id'] %>'>
+    <div class="row" id='film_<%= s['episode_id'] %>'>
       <%= link_to s['title'], film_path(s['episode_id']), target: :_blank %>
       <p>Episode: <%= s['episode_id'] %></p>
       <p>Director: <%= s['director'] %></p>
       <p>Producer(s): <%= s['producer'] %></p>
-
       <br>
     </div>
     <% end %>
   </div>
 
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
 </div>
 
 

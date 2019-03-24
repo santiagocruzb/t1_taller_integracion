@@ -1,0 +1,34 @@
+<h1>Search</h1>
+<h2>Films</h2>
+<% @films.each do |film| %>
+    <div class="row">
+      <h4><%= film["name"] %></h4>
+      <%= link_to "Show more", film["url"] %>
+    </div>
+<% end %>
+
+<h2>Characters</h2>
+<% @characters.each do |character| %>
+    <div class="row">
+      <h4><%= character["name"]%></h4>
+      <%= link_to "Show more", character["url"] %>
+    </div>
+<% end %>
+
+<h2>Planets</h2>
+<% @planets.each do |planet| %>
+    <div class="row">
+      <h4><%= planet["name"]%></h4>
+      <%= link_to "Show more", planet["url"] %>
+    </div>
+<% end %>
+
+<h2>Starships</h2>
+<% @starships.each do |starship| %>
+    <div class="row">
+      <h4><%= starship["name"]%></h4>
+      <%= link_to "Show more", starship["url"] %>
+    </div>
+<% end %>
+
+
