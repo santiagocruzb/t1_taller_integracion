@@ -27,8 +27,8 @@ class StarshipController < ApplicationController
         a_retornar << local
       end
     end
-    a_retornar = a_retornar.sort_by { |k| k["url"].split('/')[-1].to_i }
-
+    a_retornar = a_retornar.sort_by { |k| k["id"].to_i }
+    @starships = a_retornar
   end
 
 

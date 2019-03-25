@@ -28,7 +28,7 @@ class PlanetController < ApplicationController
                 a_retornar << local
             end
         end
-        @planets = a_retornar.sort_by { |k| k["url"].split('/')[-1].to_i }
+        @planets = a_retornar.sort_by { |k| k["id"].to_i }
   
         
     end

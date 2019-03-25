@@ -3,7 +3,7 @@
 <% @films.each do |film| %>
     <div class="row">
       <h4><%= film["name"] %></h4>
-      <%= link_to "Show more", film["url"] %>
+      <%= link_to "Show more", film_path(film["id"]), target: :_blank  %>
     </div>
 <% end %>
 
@@ -11,7 +11,7 @@
 <% @characters.each do |character| %>
     <div class="row">
       <h4><%= character["name"]%></h4>
-      <%= link_to "Show more", character["url"] %>
+      <%= link_to "Show more", character_path(character["id"]), target: :_blank  %>
     </div>
 <% end %>
 
@@ -19,7 +19,7 @@
 <% @planets.each do |planet| %>
     <div class="row">
       <h4><%= planet["name"]%></h4>
-      <%= link_to "Show more", planet["url"] %>
+      <%= link_to "Show more", planet_path(planet["id"]), target: :_blank  %>
     </div>
 <% end %>
 
@@ -27,7 +27,7 @@
 <% @starships.each do |starship| %>
     <div class="row">
       <h4><%= starship["name"]%></h4>
-      <%= link_to "Show more", starship["url"] %>
+      <%= link_to "Show more", starship_path(starship["id"]), target: :_blank  %>
     </div>
 <% end %>
 

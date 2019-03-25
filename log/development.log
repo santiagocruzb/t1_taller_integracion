@@ -11345,3 +11345,1176 @@ Completed 200 OK in 2113ms (Views: 241.4ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 2256ms (Views: 42.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-03-24 01:25:03 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2149ms (Views: 245.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 11:37:07 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2859ms (Views: 288.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planets" for ::1 at 2019-03-25 11:37:15 -0300
+Processing by PlanetController#index as HTML
+Completed 500 Internal Server Error in 3084ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/planet_controller.rb:31:in `block in index'
+app/controllers/planet_controller.rb:31:in `each'
+app/controllers/planet_controller.rb:31:in `sort_by'
+app/controllers/planet_controller.rb:31:in `index'
+Started GET "/planets" for ::1 at 2019-03-25 11:37:55 -0300
+Processing by PlanetController#index as HTML
+Completed 500 Internal Server Error in 2137ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/planet_controller.rb:32:in `block in index'
+app/controllers/planet_controller.rb:32:in `each'
+app/controllers/planet_controller.rb:32:in `sort_by'
+app/controllers/planet_controller.rb:32:in `index'
+Started GET "/planets" for ::1 at 2019-03-25 11:38:22 -0300
+Processing by PlanetController#index as HTML
+  Rendering planet/index.html.erb within layouts/application
+  Rendered planet/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2465ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters" for ::1 at 2019-03-25 11:38:33 -0300
+Processing by CharacterController#index as HTML
+  Rendering character/index.html.erb within layouts/application
+  Rendered character/index.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2579ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships" for ::1 at 2019-03-25 11:38:39 -0300
+Processing by StarshipController#index as HTML
+Completed 500 Internal Server Error in 1619ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/starship_controller.rb:30:in `block in index'
+app/controllers/starship_controller.rb:30:in `each'
+app/controllers/starship_controller.rb:30:in `sort_by'
+app/controllers/starship_controller.rb:30:in `index'
+Started GET "/starships" for ::1 at 2019-03-25 11:38:55 -0300
+Processing by StarshipController#index as HTML
+Completed 500 Internal Server Error in 1742ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/starship_controller.rb:31:in `block in index'
+app/controllers/starship_controller.rb:31:in `each'
+app/controllers/starship_controller.rb:31:in `sort_by'
+app/controllers/starship_controller.rb:31:in `index'
+Started GET "/starships" for ::1 at 2019-03-25 11:39:15 -0300
+Processing by StarshipController#index as HTML
+  Rendering starship/index.html.erb within layouts/application
+  Rendered starship/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 2194ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: <div class="container">
+    4:     <h2>Starships</h2>
+    5:     <% @starships.each do |starship| %>
+    6:         <div class="row">
+    7:         <%= link_to starship["name"], starship_path(starship["id"]), target: :_blank %>
+    8:         </div>
+  
+app/views/starship/index.html.erb:5:in `_app_views_starship_index_html_erb__365196400607144465_70250222708160'
+Started GET "/starships" for ::1 at 2019-03-25 11:39:28 -0300
+Processing by StarshipController#index as HTML
+  Rendering starship/index.html.erb within layouts/application
+  Rendered starship/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1831ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships" for ::1 at 2019-03-25 11:39:36 -0300
+Processing by StarshipController#index as HTML
+Started GET "/characters" for ::1 at 2019-03-25 11:39:37 -0300
+  Rendering starship/index.html.erb within layouts/application
+  Rendered starship/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1779ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by CharacterController#index as HTML
+  Rendering character/index.html.erb within layouts/application
+  Rendered character/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2048ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planets" for ::1 at 2019-03-25 11:39:46 -0300
+Processing by PlanetController#index as HTML
+Started GET "/characters/11" for ::1 at 2019-03-25 11:39:48 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"11"}
+  Rendering planet/index.html.erb within layouts/application
+  Rendered planet/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1913ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 11:39:51 -0300
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3248ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1986ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=s" for ::1 at 2019-03-25 11:40:01 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"s"}
+Started GET "/search.json?q=sk" for ::1 at 2019-03-25 11:40:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"sk"}
+Started GET "/search.json?q=sky" for ::1 at 2019-03-25 11:40:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"sky"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (8.5ms)
+Completed 200 OK in 1268ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.9ms)
+Completed 200 OK in 1370ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.2ms)
+Completed 200 OK in 1187ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=sky" for ::1 at 2019-03-25 11:40:05 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"sky"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1209ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=sky" for ::1 at 2019-03-25 11:40:06 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"sky"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.2ms)
+Completed 200 OK in 1088ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=gon" for ::1 at 2019-03-25 11:40:08 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"gon"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.2ms)
+Completed 200 OK in 787ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=gon" for ::1 at 2019-03-25 11:40:09 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"gon"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.2ms)
+Completed 200 OK in 1019ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=gon" for ::1 at 2019-03-25 11:40:10 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"gon"}
+Started GET "/characters/32" for ::1 at 2019-03-25 11:40:11 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"32"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.3ms)
+Completed 200 OK in 1294ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2048ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 11:40:34 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1879ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=n" for ::1 at 2019-03-25 11:40:40 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"n"}
+Started GET "/search.json?q=ne" for ::1 at 2019-03-25 11:40:40 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ne"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.2ms)
+Completed 200 OK in 1420ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.6ms)
+Completed 200 OK in 1386ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ne" for ::1 at 2019-03-25 11:40:53 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ne"}
+Started GET "/search.json?q=t" for ::1 at 2019-03-25 11:40:53 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"t"}
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:40:53 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+Started GET "/search.json?q=tat" for ::1 at 2019-03-25 11:40:53 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"tat"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 1096ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ne" for ::1 at 2019-03-25 11:40:54 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ne"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.2ms)
+Completed 200 OK in 1209ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 1182ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.4ms)
+Completed 200 OK in 1074ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.8ms)
+Completed 200 OK in 1050ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:40:57 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+Started GET "/search.json?q=t" for ::1 at 2019-03-25 11:40:58 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"t"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.2ms)
+Completed 200 OK in 1189ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.5ms)
+Completed 200 OK in 1461ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=t" for ::1 at 2019-03-25 11:41:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"t"}
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.5ms)
+Completed 200 OK in 1225ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.2ms)
+Completed 200 OK in 1560ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 11:41:06 -0300
+Processing by StaticPagesController#home as HTML
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:07 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.8ms)
+Completed 200 OK in 1221ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:08 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1967ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1056ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=t" for ::1 at 2019-03-25 11:41:10 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"t"}
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:10 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.4ms)
+Completed 200 OK in 920ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.9ms)
+Completed 200 OK in 1015ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:15 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.3ms)
+Completed 200 OK in 1472ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planets" for ::1 at 2019-03-25 11:41:17 -0300
+Processing by PlanetController#index as HTML
+  Rendering planet/index.html.erb within layouts/application
+  Rendered planet/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2700ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=t" for ::1 at 2019-03-25 11:41:22 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"t"}
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:22 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+Started GET "/search.json?q=tat" for ::1 at 2019-03-25 11:41:22 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"tat"}
+Started GET "/search.json?q=tato" for ::1 at 2019-03-25 11:41:22 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"tato"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.8ms)
+Completed 200 OK in 1086ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.6ms)
+Completed 200 OK in 695ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.3ms)
+Completed 200 OK in 1068ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 1349ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/74" for ::1 at 2019-03-25 11:41:29 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"74"}
+Started GET "/search.json?q=t" for ::1 at 2019-03-25 11:41:33 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"t"}
+Started GET "/search.json?q=ta" for ::1 at 2019-03-25 11:41:33 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ta"}
+Started GET "/search.json?q=tat" for ::1 at 2019-03-25 11:41:33 -0300
+Started GET "/search?utf8=%E2%9C%93&q=tat" for ::1 at 2019-03-25 11:41:33 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"tat"}
+Processing by MainController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"tat"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 4455ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.9ms)
+Completed 200 OK in 1160ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.5ms)
+Completed 200 OK in 1449ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.html.erb within layouts/application
+  Rendered main/search.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.3ms)
+Completed 200 OK in 1128ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1107ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-03-25 11:41:40 -0300
+Processing by MainController#search as HTML
+  Rendering main/search.html.erb within layouts/application
+  Rendered main/search.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1245ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=tat" for ::1 at 2019-03-25 11:42:58 -0300
+Processing by MainController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"tat"}
+  Rendering main/search.html.erb within layouts/application
+  Rendered main/search.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1429ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=a" for ::1 at 2019-03-25 11:43:01 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"a"}
+Started GET "/search.json?q=a%20n" for ::1 at 2019-03-25 11:43:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"a n"}
+Started GET "/search.json?q=a%20ne" for ::1 at 2019-03-25 11:43:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"a ne"}
+Started GET "/search.json?q=a%20new" for ::1 at 2019-03-25 11:43:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"a new"}
+Started GET "/search?utf8=%E2%9C%93&q=a+new&button=" for ::1 at 2019-03-25 11:43:02 -0300
+Processing by MainController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"a new", "button"=>""}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.2ms)
+Completed 200 OK in 1517ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.8ms)
+Completed 200 OK in 1301ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1322ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.html.erb within layouts/application
+  Rendered main/search.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1229ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.4ms)
+Completed 200 OK in 1671ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-03-25 11:43:07 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4666ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=a" for ::1 at 2019-03-25 11:44:10 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"a"}
+Started GET "/search?utf8=%E2%9C%93&q=a&button=" for ::1 at 2019-03-25 11:44:10 -0300
+Processing by MainController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"a", "button"=>""}
+  Rendering main/search.html.erb within layouts/application
+  Rendering main/search.json.jbuilder
+  Rendered main/search.html.erb within layouts/application (0.9ms)
+  Rendered main/search.json.jbuilder (0.8ms)
+Completed 200 OK in 1835ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1734ms (Views: 120.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planets/5" for ::1 at 2019-03-25 11:44:20 -0300
+Processing by PlanetController#show as HTML
+  Parameters: {"id"=>"5"}
+Started GET "/starships/5" for ::1 at 2019-03-25 11:44:22 -0300
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering planet/show.html.erb within layouts/application
+  Rendered planet/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3765ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5752ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planets/5" for ::1 at 2019-03-25 11:44:55 -0300
+Processing by PlanetController#show as HTML
+  Parameters: {"id"=>"5"}
+Started GET "/search?utf8=%E2%9C%93&q=a&button=" for ::1 at 2019-03-25 11:44:58 -0300
+Processing by MainController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"a", "button"=>""}
+  Rendering planet/show.html.erb within layouts/application
+  Rendered planet/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 4066ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.html.erb within layouts/application
+  Rendered main/search.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 1448ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/views/main/search.html.erb:6: syntax error, unexpected tLABEL, expecting ')'
+..., film_path(film["id"]) target: :_blank );@output_buffer.saf...
+...                        ^~~~~~~
+/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/views/main/search.html.erb:14: syntax error, unexpected tLABEL, expecting ')'
+...r_path(character["id"]) target: :_blank );@output_buffer.saf...
+...                        ^~~~~~~
+/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/views/main/search.html.erb:22: syntax error, unexpected tLABEL, expecting ')'
+...anet_path(planet["id"]) target: :_blank );@output_buffer.saf...
+...                        ^~~~~~~
+/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/views/main/search.html.erb:30: syntax error, unexpected tLABEL, expecting ')'
+...ip_path(starship["id"]) target: :_blank );@output_buffer.saf...
+...                        ^~~~~~~):
+  
+app/views/main/search.html.erb:6: syntax error, unexpected tLABEL, expecting ')'
+app/views/main/search.html.erb:14: syntax error, unexpected tLABEL, expecting ')'
+app/views/main/search.html.erb:22: syntax error, unexpected tLABEL, expecting ')'
+app/views/main/search.html.erb:30: syntax error, unexpected tLABEL, expecting ')'
+Started GET "/search?utf8=%E2%9C%93&q=a&button=" for ::1 at 2019-03-25 11:45:25 -0300
+Processing by MainController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"a", "button"=>""}
+  Rendering main/search.html.erb within layouts/application
+  Rendered main/search.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1545ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/2" for ::1 at 2019-03-25 11:45:50 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"2"}
+Started GET "/characters/1" for ::1 at 2019-03-25 11:45:52 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/planets/3" for ::1 at 2019-03-25 11:45:55 -0300
+Processing by PlanetController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering planet/show.html.erb within layouts/application
+  Rendered planet/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2507ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/15" for ::1 at 2019-03-25 11:45:58 -0300
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"15"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6436ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9061ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3438ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=c" for ::1 at 2019-03-25 11:46:23 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"c"}
+Started GET "/search.json?q=ch" for ::1 at 2019-03-25 11:46:23 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ch"}
+Started GET "/search.json?q=che" for ::1 at 2019-03-25 11:46:23 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"che"}
+Started GET "/search.json?q=chew" for ::1 at 2019-03-25 11:46:24 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"chew"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.2ms)
+Completed 200 OK in 750ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.7ms)
+Completed 200 OK in 1198ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.4ms)
+  Rendered main/search.json.jbuilder (2.0ms)
+Completed 200 OK in 1923ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2138ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/13" for ::1 at 2019-03-25 11:46:27 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"13"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5130ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=r" for ::1 at 2019-03-25 11:47:14 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"r"}
+Started GET "/search.json?q=ra" for ::1 at 2019-03-25 11:47:15 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ra"}
+Started GET "/search.json?q=ray" for ::1 at 2019-03-25 11:47:15 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ray"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1509ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 1189ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.4ms)
+Completed 200 OK in 1240ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ra" for ::1 at 2019-03-25 11:47:18 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ra"}
+Started GET "/search.json?q=r" for ::1 at 2019-03-25 11:47:18 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"r"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.4ms)
+Completed 200 OK in 1265ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 2119ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=h" for ::1 at 2019-03-25 11:47:26 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"h"}
+Started GET "/search.json?q=ha" for ::1 at 2019-03-25 11:47:26 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ha"}
+Started GET "/search.json?q=han" for ::1 at 2019-03-25 11:47:26 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1381ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.6ms)
+Completed 200 OK in 1581ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.6ms)
+Completed 200 OK in 1717ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=han" for ::1 at 2019-03-25 11:47:30 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1134ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=han" for ::1 at 2019-03-25 11:47:31 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han"}
+Started GET "/search.json?q=h" for ::1 at 2019-03-25 11:47:31 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"h"}
+Started GET "/search.json?q=han%20s" for ::1 at 2019-03-25 11:47:32 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han s"}
+Started GET "/search.json?q=han%20so" for ::1 at 2019-03-25 11:47:32 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han so"}
+Started GET "/search.json?q=han%20sol" for ::1 at 2019-03-25 11:47:32 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han sol"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.5ms)
+Completed 200 OK in 1046ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=han" for ::1 at 2019-03-25 11:47:32 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.1ms)
+Completed 200 OK in 1631ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.4ms)
+Completed 200 OK in 1165ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=han%20solo" for ::1 at 2019-03-25 11:47:33 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han solo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1097ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=han" for ::1 at 2019-03-25 11:47:33 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"han"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 1249ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 1710ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.6ms)
+Completed 200 OK in 1085ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.6ms)
+Completed 200 OK in 1181ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/1" for ::1 at 2019-03-25 11:47:34 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/search.json?q=so" for ::1 at 2019-03-25 11:47:38 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"so"}
+Started GET "/search.json?q=sol" for ::1 at 2019-03-25 11:47:39 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"sol"}
+Started GET "/search.json?q=solo" for ::1 at 2019-03-25 11:47:39 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"solo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.9ms)
+Completed 200 OK in 1188ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.3ms)
+Completed 200 OK in 1388ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.7ms)
+Completed 200 OK in 1738ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=so" for ::1 at 2019-03-25 11:47:40 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"so"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6241ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 1077ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=so" for ::1 at 2019-03-25 11:47:43 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"so"}
+Started GET "/search.json?q=sol" for ::1 at 2019-03-25 11:47:43 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"sol"}
+Started GET "/search.json?q=solo" for ::1 at 2019-03-25 11:47:43 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"solo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 809ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.4ms)
+Completed 200 OK in 733ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.8ms)
+Completed 200 OK in 1248ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=so" for ::1 at 2019-03-25 11:47:44 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"so"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.9ms)
+Completed 200 OK in 878ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=solo" for ::1 at 2019-03-25 11:47:45 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"solo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.7ms)
+Completed 200 OK in 999ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=solo" for ::1 at 2019-03-25 11:47:46 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"solo"}
+Started GET "/search.json?q=k" for ::1 at 2019-03-25 11:47:47 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"k"}
+Started GET "/search.json?q=ke" for ::1 at 2019-03-25 11:47:47 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ke"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.1ms)
+Completed 200 OK in 683ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ken" for ::1 at 2019-03-25 11:47:47 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ken"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.0ms)
+Completed 200 OK in 825ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 681ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 1133ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ken" for ::1 at 2019-03-25 11:47:48 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ken"}
+Started GET "/search.json?q=re" for ::1 at 2019-03-25 11:47:49 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"re"}
+Started GET "/search.json?q=ren" for ::1 at 2019-03-25 11:47:49 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ren"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.8ms)
+Completed 200 OK in 1067ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=ken" for ::1 at 2019-03-25 11:47:49 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ken"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.9ms)
+Completed 200 OK in 1157ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=re" for ::1 at 2019-03-25 11:47:50 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"re"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 1095ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 1129ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.8ms)
+Completed 200 OK in 1348ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=re" for ::1 at 2019-03-25 11:47:54 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"re"}
+Started GET "/search.json?q=r" for ::1 at 2019-03-25 11:47:54 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"r"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.3ms)
+Completed 200 OK in 1262ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.5ms)
+Completed 200 OK in 1261ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=k" for ::1 at 2019-03-25 11:48:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"k"}
+Started GET "/search.json?q=ky" for ::1 at 2019-03-25 11:48:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ky"}
+Started GET "/search.json?q=kyl" for ::1 at 2019-03-25 11:48:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"kyl"}
+Started GET "/search.json?q=kylo" for ::1 at 2019-03-25 11:48:02 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"kylo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (2.2ms)
+Completed 200 OK in 1244ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.5ms)
+Completed 200 OK in 1232ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.2ms)
+Completed 200 OK in 1185ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.2ms)
+Completed 200 OK in 1110ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/1" for ::1 at 2019-03-25 11:48:08 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/search.json?q=kylo" for ::1 at 2019-03-25 11:48:08 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"kylo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.9ms)
+Completed 200 OK in 1048ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 6951ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search.json?q=k" for ::1 at 2019-03-25 11:48:17 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"k"}
+Started GET "/search.json?q=ky" for ::1 at 2019-03-25 11:48:17 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"ky"}
+Started GET "/search.json?q=kyl" for ::1 at 2019-03-25 11:48:17 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"kyl"}
+Started GET "/search.json?q=kylo" for ::1 at 2019-03-25 11:48:17 -0300
+Processing by MainController#search as JSON
+  Parameters: {"q"=>"kylo"}
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (1.3ms)
+Completed 200 OK in 1082ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.2ms)
+Completed 200 OK in 1138ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.2ms)
+Completed 200 OK in 1700ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering main/search.json.jbuilder
+  Rendered main/search.json.jbuilder (0.3ms)
+Completed 200 OK in 2476ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-03-25 11:48:25 -0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2348ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/7" for ::1 at 2019-03-25 11:48:30 -0300
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4864ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/84" for ::1 at 2019-03-25 11:48:42 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"84"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3374ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/87" for ::1 at 2019-03-25 11:48:53 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"87"}
+Started GET "/characters/86" for ::1 at 2019-03-25 11:48:54 -0300
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"86"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3681ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4925ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
