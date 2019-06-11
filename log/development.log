@@ -12518,3 +12518,206 @@ Completed 200 OK in 3681ms (Views: 76.3ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 4925ms (Views: 29.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-11 14:13:52 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2680ms (Views: 343.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:20:14 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2987ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:26:53 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2769ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:27:25 -0400
+  
+SyntaxError (/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/controllers/static_pages_controller.rb:9: syntax error, unexpected '{', expecting end
+...ntegracion-t3.herokuapp.com/" {params: {'query' => 'query'}}
+...                              ^
+/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/controllers/static_pages_controller.rb:9: syntax error, unexpected '}', expecting end
+... {params: {'query' => 'query'}}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:9: syntax error, unexpected '{', expecting end
+app/controllers/static_pages_controller.rb:9: syntax error, unexpected '}', expecting end
+Started GET "/" for ::1 at 2019-06-11 14:27:54 -0400
+  
+SyntaxError (/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/controllers/static_pages_controller.rb:10: syntax error, unexpected '{', expecting end
+...ntegracion-t3.herokuapp.com/" {params: {'query' => query}}
+...                              ^
+/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/controllers/static_pages_controller.rb:10: syntax error, unexpected '}', expecting end
+.../" {params: {'query' => query}}
+...                              ^):
+  
+app/controllers/static_pages_controller.rb:10: syntax error, unexpected '{', expecting end
+app/controllers/static_pages_controller.rb:10: syntax error, unexpected '}', expecting end
+Started GET "/" for ::1 at 2019-06-11 14:28:24 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3845ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:29:56 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3675ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:30:33 -0400
+Processing by StaticPagesController#home as HTML
+Completed 500 Internal Server Error in 3462ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `allFilms' for #<StaticPagesController:0x00007ff2d9a44628>
+Did you mean?  all_films):
+  
+app/controllers/static_pages_controller.rb:16:in `home'
+Started GET "/" for ::1 at 2019-06-11 14:30:48 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3898ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:32:03 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4177ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:34:31 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (248.2ms)
+Completed 500 Internal Server Error in 5053ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ss' for #<#<Class:0x00007ff2df888158>:0x00007ff2df8824b0>
+Did you mean?  s):
+    17: 
+    18: 
+    19:     <div class="row" id='film_<%= s['node']['episodeId'] %>'>
+    20:       <h3><%= link_to s['title'], film_path(ss['node']['episodeId']), target: :_blank %><h3>
+    21:       <p>Episode: <%= s['node']['episodeId'] %></p>
+    22:       <p>Director: <%= s['node']['director'] %></p>
+    23:       <p>Producer(s): <%= s['node']['producers'] %></p>
+  
+app/views/static_pages/home.html.erb:20:in `block in _app_views_static_pages_home_html_erb__986227104002542013_70340554540120'
+app/views/static_pages/home.html.erb:15:in `each'
+app/views/static_pages/home.html.erb:15:in `_app_views_static_pages_home_html_erb__986227104002542013_70340554540120'
+Started GET "/" for ::1 at 2019-06-11 14:34:42 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 3911ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"films", :id=>nil}, missing required keys: [:id]):
+    17: 
+    18: 
+    19:     <div class="row" id='film_<%= s['node']['episodeId'] %>'>
+    20:       <h3><%= link_to s['title'], film_path(s['node']['episodeId']), target: :_blank %><h3>
+    21:       <p>Episode: <%= s['node']['episodeId'] %></p>
+    22:       <p>Director: <%= s['node']['director'] %></p>
+    23:       <p>Producer(s): <%= s['node']['producers'] %></p>
+  
+app/views/static_pages/home.html.erb:20:in `block in _app_views_static_pages_home_html_erb__986227104002542013_70340554740780'
+app/views/static_pages/home.html.erb:15:in `each'
+app/views/static_pages/home.html.erb:15:in `_app_views_static_pages_home_html_erb__986227104002542013_70340554740780'
+Started GET "/" for ::1 at 2019-06-11 14:34:59 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 4637ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"films", :id=>nil}, missing required keys: [:id]):
+    17: 
+    18: 
+    19:     <div class="row" id='film_<%= s['node']['episodeId'] %>'>
+    20:       <h3><%= link_to s['node']['title'], film_path(s['node']['episodeId']), target: :_blank %><h3>
+    21:       <p>Episode: <%= s['node']['episodeId'] %></p>
+    22:       <p>Director: <%= s['node']['director'] %></p>
+    23:       <p>Producer(s): <%= s['node']['producers'] %></p>
+  
+app/views/static_pages/home.html.erb:20:in `block in _app_views_static_pages_home_html_erb__986227104002542013_70340539360080'
+app/views/static_pages/home.html.erb:15:in `each'
+app/views/static_pages/home.html.erb:15:in `_app_views_static_pages_home_html_erb__986227104002542013_70340539360080'
+Started GET "/" for ::1 at 2019-06-11 14:35:53 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3928ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:36:36 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (34.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6245ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:37:02 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3748ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-11 14:39:29 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5374ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+

@@ -13,11 +13,14 @@
   <h2>Films</h2>
   <div id='films'>
     <% @response.each do |s| %>
-    <div class="row" id='film_<%= s['episode_id'] %>'>
-      <h3><%= link_to s['title'], film_path(s['episode_id']), target: :_blank %><h3>
-      <p>Episode: <%= s['episode_id'] %></p>
-      <p>Director: <%= s['director'] %></p>
-      <p>Producer(s): <%= s['producer'] %></p>
+
+
+
+    <div class="row" id='film_<%= s['node']['episodeID'] %>'>
+      <h3><%= link_to s['node']['title'], film_path(s['node']['episodeID']), target: :_blank %><h3>
+      <p>Episode: <%= s['node']['episodeID'] %></p>
+      <p>Director: <%= s['node']['director'] %></p>
+      <p>Producer(s): <%= s['node']['producers'].join(" - ") %></p>
       <br>
     </div>
     <% end %>
