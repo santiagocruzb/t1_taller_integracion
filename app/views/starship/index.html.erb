@@ -4,7 +4,7 @@
     <h2>Starships</h2>
     <% @starships.each do |starship| %>
         <div class="row">
-        <%= link_to starship["name"], starship_path(starship["id"]), target: :_blank %>
+        <%= link_to starship['node']["name"], starship_path(starship['node']["id"]) %>
         </div>
     <% end %>
 </div>

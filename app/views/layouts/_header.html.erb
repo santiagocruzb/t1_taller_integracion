@@ -8,7 +8,9 @@
         <li><%= link_to "Characters",    characters_path %></li>
         <li><%= link_to "Planets", planets_path %></li>
         <li><%= link_to "Starships", starships_path %></li>
-        <li>
+        <%
+=begin%>
+ <li>
           <div id="donka" class="input-field" style="padding-top: 10px;"><%= form_with url: search_path, local: true, method: :get, html: {class: "form-group"} do |form| %>
                     <%= form.text_field :q, placeholder: "Search", data: {behavior: "autocomplete"}, class: "form-control" %>
               </div>
@@ -17,7 +19,9 @@
               <div style="padding-top: 10px; padding-left: 10px;">
               <%= form.button "Seach", class: "btn btn-outline-success my-2 my-sm-0" %>
               <% end %>
-        <li>
+        <li> 
+<%
+=end%>
       </ul>
     </nav>
   </div>

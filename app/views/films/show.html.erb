@@ -17,7 +17,7 @@
     <% @general['characterConnection']['edges'].each do |c| %>
         <div id='character_<%= c['node']['name'] %>'> 
 
-            <h4><%= link_to c['node']['name'], character_path(c['node']['id']), target: :_blank %></h4>
+            <h4><%= link_to c['node']['name'], character_path(c['node']['id'])  %></h4>
             <%
 =begin%>
  <h4>Height: <%= c['height'] %> cm </h4>
@@ -37,7 +37,7 @@
     <h2>Starships</h2>
     <% @general['starshipConnection']['edges'].each do |s| %>
         <div id='starships_<%= s['node']['name'] %>'>
-            <h4><%= link_to s['node']['name'], starship_path(s['node']['id']), target: :_blank %></h4>
+            <h4><%= link_to s['node']['name'], starship_path(s['node']['id'])  %></h4>
             <%
 =begin%>
  <h4>Model : <%= s['model']%></h4>
@@ -59,7 +59,7 @@
     <h2>Planets</h2>
     <% @general['planetConnection']['edges'].each do |p|%>
     <div id='planet_<%= p['node']['name'] %>'>
-        <h4><%= link_to p['node']['name'], planet_path(p['node']['id']), target: :_blank %></h4>
+        <h4><%= link_to p['node']['name'], planet_path(p['node']['id'])  %></h4>
     </div>
 
     <% end %>

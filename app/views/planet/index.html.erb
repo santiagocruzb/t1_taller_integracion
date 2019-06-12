@@ -4,7 +4,7 @@
     <h2>Planets</h2>
     <% @planets.each do |planet| %>
         <div class="row">
-        <%= link_to planet["name"], planet_path(planet["id"]), target: :_blank %>
+        <%= link_to planet['node']["name"], planet_path(planet['node']["id"]) %>
         </div>
     <% end %>
 </div>

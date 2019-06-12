@@ -27,13 +27,13 @@
 <div id='films'>
     <h2>Films where <%= @general['name']%> appears</h2>
     <% @general['filmConnection']['edges'].each do |f| %>
-        <h4><%= link_to f['node']['title'], film_path(f['node']['id']), target: :_blank %></h4>
+        <h4><%= link_to f['node']['title'], film_path(f['node']['id'])  %></h4>
     <% end %>
 </div>
 
 <div id='character'>
     <h2>People who piloted <%= @general['name']%></h2>
     <% @general['pilotConnection']['edges'].each do |c| %>
-        <h4><%= link_to c['node']['name'], character_path(c['node']['id']), target: :_blank %></h4>
+        <h4><%= link_to c['node']['name'], character_path(c['node']['id'])  %></h4>
     <%end%>
 </div>
