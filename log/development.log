@@ -12721,3 +12721,855 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 5374ms (Views: 35.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-11 14:48:12 -0400
+Processing by StaticPagesController#home as HTML
+Started GET "/" for ::1 at 2019-06-11 14:48:16 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4352ms (Views: 267.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3376ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-06-11 14:48:34 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 6540ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 12:06:35 -0400
+Processing by StaticPagesController#home as HTML
+Started GET "/" for ::1 at 2019-06-12 12:06:38 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 17134ms (Views: 314.6ms | ActiveRecord: 0.0ms)
+
+
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 15287ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-06-12 12:06:56 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 66388ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/1" for ::1 at 2019-06-12 12:09:20 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37865ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 12:18:15 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 30080ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 12:19:19 -0400
+Processing by StaticPagesController#home as HTML
+Started GET "/" for ::1 at 2019-06-12 12:19:46 -0400
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 27577ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18381ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/4" for ::1 at 2019-06-12 12:20:09 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"4"}
+Started GET "/" for ::1 at 2019-06-12 12:20:42 -0400
+Processing by StaticPagesController#home as HTML
+Started GET "/" for ::1 at 2019-06-12 12:21:04 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 71925ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44594ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34046ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:22:25 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/films_controller.rb:23:in `concat'
+app/controllers/films_controller.rb:23:in `show'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:24:47 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 1080ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/films_controller.rb:28:in `concat'
+app/controllers/films_controller.rb:28:in `show'
+Started GET "/films/1" for ::1 at 2019-06-12 12:25:32 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40931ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 12:32:17 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1051ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 12:32:20 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 881ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:34:49 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 1009ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/films_controller.rb:26:in `[]'
+app/controllers/films_controller.rb:26:in `block in show'
+app/controllers/films_controller.rb:25:in `each'
+app/controllers/films_controller.rb:25:in `show'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:35:11 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 874ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/films_controller.rb:27:in `[]'
+app/controllers/films_controller.rb:27:in `block in show'
+app/controllers/films_controller.rb:26:in `each'
+app/controllers/films_controller.rb:26:in `show'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:36:05 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 926ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/films_controller.rb:38:in `concat'
+app/controllers/films_controller.rb:38:in `show'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:36:53 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 1407ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `founded' for #<FilmsController:0x00007f9f8f1e74f0>):
+  
+app/controllers/films_controller.rb:34:in `show'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:37:18 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+Completed 500 Internal Server Error in 1105ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `founded' for #<FilmsController:0x00007f9f8fe05048>):
+  
+app/controllers/films_controller.rb:35:in `show'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:38:05 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 980ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <% provide(:title, @general['title']) %>
+    2: 
+    3: <h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+    4: 
+  
+app/views/films/show.html.erb:1:in `_app_views_films_show_html_erb__1139680320093254499_70161607270340'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:38:31 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 1102ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <% provide(:title, @general['title']) %>
+    2: 
+    3: <h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+    4: 
+  
+app/views/films/show.html.erb:1:in `_app_views_films_show_html_erb__1139680320093254499_70161608257980'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:38:36 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 879ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <% provide(:title, @general['title']) %>
+    2: 
+    3: <h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+    4: 
+  
+app/views/films/show.html.erb:1:in `_app_views_films_show_html_erb__1139680320093254499_70161640212740'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:38:46 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 856ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    1: <% provide(:title, @general['title']) %>
+    2: 
+    3: <h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+    4: 
+    5: <div id='general_info'>
+    6: <h2>General Information</h2>
+  
+app/views/films/show.html.erb:3:in `_app_views_films_show_html_erb__1139680320093254499_70161639518420'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:39:23 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 817ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `split' for nil:NilClass):
+    1: <% provide(:title, @general['title']) %>
+    2: 
+    3: <h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+    4: 
+    5: <div id='general_info'>
+    6: <h2>General Information</h2>
+  
+app/views/films/show.html.erb:3:in `_app_views_films_show_html_erb__1139680320093254499_70161638035240'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:43:54 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 890ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    15: <div id='characters'>
+    16:     <h2>Characters</h2>
+    17:     <% @general['characterConnection'].each do |c| %>
+    18:         <div id='character_<%= c['edges']['name'] %>'> 
+    19:             <%
+    20: =begin%>
+    21:  <h4>Name: <%= c['name'] %> </h4> 
+  
+app/views/films/show.html.erb:18:in `[]'
+app/views/films/show.html.erb:18:in `block in _app_views_films_show_html_erb__1139680320093254499_70161608235480'
+app/views/films/show.html.erb:17:in `each'
+app/views/films/show.html.erb:17:in `_app_views_films_show_html_erb__1139680320093254499_70161608235480'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:45:21 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 1117ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    15: <div id='characters'>
+    16:     <h2>Characters</h2>
+    17:     <% @general['characterConnection'].each do |c| %>
+    18:         <div id='character_<%= c['edges']['name'] %>'> 
+    19:             <h4><%= link_to c['edges']['name'], character_path(c['edges']['id']), target: :_blank %></h4>
+    20:             <%
+    21: =begin%>
+  
+app/views/films/show.html.erb:18:in `[]'
+app/views/films/show.html.erb:18:in `block in _app_views_films_show_html_erb__1139680320093254499_70161643625080'
+app/views/films/show.html.erb:17:in `each'
+app/views/films/show.html.erb:17:in `_app_views_films_show_html_erb__1139680320093254499_70161643625080'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:45:38 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 1024ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    15: <div id='characters'>
+    16:     <h2>Characters</h2>
+    17:     <% @general['characterConnection'].each do |c| %>
+    18:         <div id='character_<%= c['edges']['name'].to_s %>'> 
+    19:             <h4><%= link_to c['edges']['name'], character_path(c['edges']['id']), target: :_blank %></h4>
+    20:             <%
+    21: =begin%>
+  
+app/views/films/show.html.erb:18:in `[]'
+app/views/films/show.html.erb:18:in `block in _app_views_films_show_html_erb__1139680320093254499_70161603598440'
+app/views/films/show.html.erb:17:in `each'
+app/views/films/show.html.erb:17:in `_app_views_films_show_html_erb__1139680320093254499_70161603598440'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:46:21 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 962ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    17:     <% @general['characterConnection'].each do |c| %>
+    18:         <div > 
+    19: 
+    20:             <h4><%= link_to c['edges']['name'], character_path(c['edges']['id']), target: :_blank %></h4>
+    21:             <%
+    22: =begin%>
+    23:  <h4>Height: <%= c['height'] %> cm </h4>
+  
+app/views/films/show.html.erb:20:in `[]'
+app/views/films/show.html.erb:20:in `block in _app_views_films_show_html_erb__1139680320093254499_70161639047120'
+app/views/films/show.html.erb:17:in `each'
+app/views/films/show.html.erb:17:in `_app_views_films_show_html_erb__1139680320093254499_70161639047120'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:48:17 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 1126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"character", :id=>nil}, missing required keys: [:id]):
+    17:     <% @general['characterConnection']['edges'].each do |c| %>
+    18:         <div id='character_<%= c['name'] %>'> 
+    19: 
+    20:             <h4><%= link_to c['name'], character_path(c['id']), target: :_blank %></h4>
+    21:             <%
+    22: =begin%>
+    23:  <h4>Height: <%= c['height'] %> cm </h4>
+  
+app/views/films/show.html.erb:20:in `block in _app_views_films_show_html_erb__1139680320093254499_70161646188420'
+app/views/films/show.html.erb:17:in `each'
+app/views/films/show.html.erb:17:in `_app_views_films_show_html_erb__1139680320093254499_70161646188420'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:56:50 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 1027ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"character", :id=>nil}, missing required keys: [:id]):
+    17:     <% @general['characterConnection']['edges'].each do |c| %>
+    18:         <div id='character_<%= c['name'] %>'> 
+    19: 
+    20:             <h4><%= link_to c['name'], character_path(c['id']), target: :_blank %></h4>
+    21:             <%
+    22: =begin%>
+    23:  <h4>Height: <%= c['height'] %> cm </h4>
+  
+app/views/films/show.html.erb:20:in `block in _app_views_films_show_html_erb__1139680320093254499_70161644872120'
+app/views/films/show.html.erb:17:in `each'
+app/views/films/show.html.erb:17:in `_app_views_films_show_html_erb__1139680320093254499_70161644872120'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:57:18 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 1032ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"starship", :id=>nil}, missing required keys: [:id]):
+    37:     <h2>Starships</h2>
+    38:     <% @general['starshipConnection']['edges'].each do |s| %>
+    39:         <div id='starships_<%= s['name'] %>'>
+    40:             <h4><%= link_to s['name'], starship_path(s['id']), target: :_blank %></h4>
+    41:             <%
+    42: =begin%>
+    43:  <h4>Model : <%= s['model']%></h4>
+  
+app/views/films/show.html.erb:40:in `block in _app_views_films_show_html_erb__1139680320093254499_70161642258620'
+app/views/films/show.html.erb:38:in `each'
+app/views/films/show.html.erb:38:in `_app_views_films_show_html_erb__1139680320093254499_70161642258620'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 12:57:38 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 966ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 12:57:52 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+Completed 500 Internal Server Error in 1380ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/character_controller.rb:38:in `show'
+Started GET "/characters/1" for ::1 at 2019-06-12 12:57:55 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2861ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 13:02:41 -0400
+  
+SyntaxError (/Users/santiagocruzb/Documents/SantiagoCruzB_Pythons/t1_taller_integracion/app/controllers/character_controller.rb:91: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/character_controller.rb:91: syntax error, unexpected end-of-input, expecting end
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 13:02:50 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 1101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    24: 
+    25: <div id='films'>
+    26:     <h2>Films where <%= @general['name']%> appears</h2>
+    27:     <% @films.each do |f| %>
+    28:         <h4><%= link_to f['title'], film_path(convertidor[f['url'].split('/')[-1]]), target: :_blank %></h4>
+    29:     <% end %>
+    30: </div>
+  
+app/views/character/show.html.erb:27:in `_app_views_character_show_html_erb__2049018963583609558_70161644616860'
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 13:03:11 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1036ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 13:03:14 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 1016ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    24: 
+    25: <div id='films'>
+    26:     <h2>Films where <%= @general['name']%> appears</h2>
+    27:     <% @films.each do |f| %>
+    28:         <h4><%= link_to f['title'], film_path(convertidor[f['url'].split('/')[-1]]), target: :_blank %></h4>
+    29:     <% end %>
+    30: </div>
+  
+app/views/character/show.html.erb:27:in `_app_views_character_show_html_erb__2049018963583609558_70161639338320'
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 13:06:27 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 1171ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    24: 
+    25: <div id='films'>
+    26:     <h2>Films where <%= @general['name']%> appears</h2>
+    27:     <% @general['filmsConnection']['edges'].each do |f| %>
+    28:         <h4><%= link_to f['node']['title'], film_path(f['node']['id']), target: :_blank %></h4>
+    29:     <% end %>
+    30: </div>
+  
+app/views/character/show.html.erb:27:in `_app_views_character_show_html_erb__2049018963583609558_70161603814800'
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 13:06:45 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1087ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/films/ZmlsbXM6MQ==" for ::1 at 2019-06-12 13:06:57 -0400
+Processing by FilmsController#show as HTML
+  Parameters: {"id"=>"ZmlsbXM6MQ=="}
+  Rendering films/show.html.erb within layouts/application
+  Rendered films/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 798ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:07:01 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+Completed 500 Internal Server Error in 1593ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/starship_controller.rb:39:in `show'
+Started GET "/starships/1" for ::1 at 2019-06-12 13:07:06 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1266ms (ActiveRecord: 0.0ms)
+
+
+  
+RestClient::NotFound (404 Not Found):
+  
+app/controllers/starship_controller.rb:39:in `show'
+Started GET "/starships/2" for ::1 at 2019-06-12 13:07:11 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2244ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/starships/3" for ::1 at 2019-06-12 13:09:39 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2398ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/1" for ::1 at 2019-06-12 13:16:29 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 1070ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Character: <%= @general['name']%></h1>
+    13: 
+  
+app/views/character/show.html.erb:10:in `_app_views_character_show_html_erb__2049018963583609558_70161640099420'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:21:57 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 1456ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161644231620'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:22:10 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 1080ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161612557740'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:22:33 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 996ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161603614480'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:22:53 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 1957ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161644130780'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:24:26 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 839ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161642265220'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:25:09 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 925ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161608361820'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:26:55 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 1074ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:             "7" => "7" }
+     8:             %>
+     9: 
+    10: <% provide(:title, @general['name']) %>
+    11: 
+    12: <h1>Starship: <%= @general['name']%></h1>
+    13: 
+  
+app/views/starship/show.html.erb:10:in `_app_views_starship_show_html_erb__1935489411552913294_70161644742780'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:27:48 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+Completed 500 Internal Server Error in 1024ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/starship_controller.rb:42:in `show'
+Started GET "/starships/c3RhcnNoaXBzOjEy" for ::1 at 2019-06-12 13:28:50 -0400
+Processing by StarshipController#show as HTML
+  Parameters: {"id"=>"c3RhcnNoaXBzOjEy"}
+  Rendering starship/show.html.erb within layouts/application
+  Rendered starship/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1063ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/cGVvcGxlOjE=" for ::1 at 2019-06-12 13:28:59 -0400
+Processing by CharacterController#show as HTML
+  Parameters: {"id"=>"cGVvcGxlOjE="}
+  Rendering character/show.html.erb within layouts/application
+  Rendered character/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 937ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 13:29:39 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 892ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters" for ::1 at 2019-06-12 13:29:41 -0400
+Processing by CharacterController#index as HTML
+  Rendering character/index.html.erb within layouts/application
+  Rendered character/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2383ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+

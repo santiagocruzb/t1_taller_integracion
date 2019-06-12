@@ -15,23 +15,23 @@
     <h2>General Information</h2>
     <h4>Height: <%= @general['height'] %> cm </h4>
     <h4>Weight on Coruscant: <%= @general['mass'] %> kg </h4>
-    <h4>Hair color: <%= @general['hair_color'] %> </h4>
-    <h4>Skin color: <%= @general['skin_color'] %> </h4>
+    <h4>Hair color: <%= @general['hairColor'] %> </h4>
+    <h4>Skin color: <%= @general['skinColor'] %> </h4>
     <h4>Gender: <%= @general['gender'] %> </h4>
-    <h4>YOB: <%= @general['birth_year'] %> </h4> 
+    <h4>YOB: <%= @general['birthYear'] %> </h4> 
     <br>
 </div>
 
 <div id='films'>
     <h2>Films where <%= @general['name']%> appears</h2>
-    <% @films.each do |f| %>
-        <h4><%= link_to f['title'], film_path(convertidor[f['url'].split('/')[-1]]), target: :_blank %></h4>
+    <% @general['filmConnection']['edges'].each do |f| %>
+        <h4><%= link_to f['node']['title'], film_path(f['node']['id']), target: :_blank %></h4>
     <% end %>
 </div>
 
 <div id='starships'>
     <h2>Starships related to <%= @general['name']%></h2>
-    <% @starships.each do |s| %>
-        <h4><%= link_to s['name'], starship_path(s['url'].split('/')[-1]), target: :_blank %></h4>
+    <% @general['starshipConnection']['edges'].each do |s| %>
+        <h4><%= link_to s['node']['name'], starship_path(s['node']['id']), target: :_blank %></h4>
     <% end %>
 </div>

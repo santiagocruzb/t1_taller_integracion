@@ -1,27 +1,23 @@
 <% provide(:title, @general['title']) %>
 
-<h1><%= @general['title']%> (<%=@general['release_date'].split('-')[0]%>)</h1>
+<h1><%= @general['title']%> (<%=@general['releaseDate'].split('-')[0]%>)</h1>
 
 <div id='general_info'>
 <h2>General Information</h2>
 <h3>Director: <%= @general['director'] %> </h3>
-<h4>Producer(s): <%= @general['producer'] %></h4>
+<h4>Producer(s): <%= @general['producers'].join(" - ") %></h4>
 <br>
-<p><i><%= @general['opening_crawl'] %></i></p>
+<p><i><%= @general['openingCrawl'] %></i></p>
 <br>
 </div>
 
 
 <div id='characters'>
     <h2>Characters</h2>
-    <% @characters.each do |c| %>
-        <div id='character_<%= c['name'] %>'> 
-            <%
-=begin%>
- <h4>Name: <%= c['name'] %> </h4> 
-<%
-=end%>
-            <h4><%= link_to c['name'], character_path(c['url'].split('/')[-1]), target: :_blank %></h4>
+    <% @general['characterConnection']['edges'].each do |c| %>
+        <div id='character_<%= c['node']['name'] %>'> 
+
+            <h4><%= link_to c['node']['name'], character_path(c['node']['id']), target: :_blank %></h4>
             <%
 =begin%>
  <h4>Height: <%= c['height'] %> cm </h4>
@@ -39,9 +35,9 @@
 
 <div id='starships'>
     <h2>Starships</h2>
-    <% @starships.each do |s| %>
-        <div id='starships_<%= s['name'] %>'>
-            <h4><%= link_to s['name'], starship_path(s['url'].split('/')[-1]), target: :_blank %></h4>
+    <% @general['starshipConnection']['edges'].each do |s| %>
+        <div id='starships_<%= s['node']['name'] %>'>
+            <h4><%= link_to s['node']['name'], starship_path(s['node']['id']), target: :_blank %></h4>
             <%
 =begin%>
  <h4>Model : <%= s['model']%></h4>
@@ -61,9 +57,9 @@
 
 <div id='planets'>
     <h2>Planets</h2>
-    <% @planets.each do |p|%>
-    <div id='planet_<%= p['name'] %>'>
-        <h4><%= link_to p['name'], planet_path(p['url'].split('/')[-1]), target: :_blank %></h4>
+    <% @general['planetConnection']['edges'].each do |p|%>
+    <div id='planet_<%= p['node']['name'] %>'>
+        <h4><%= link_to p['node']['name'], planet_path(p['node']['id']), target: :_blank %></h4>
     </div>
 
     <% end %>

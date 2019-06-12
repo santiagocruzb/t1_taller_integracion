@@ -33,41 +33,21 @@ class CharacterController < ApplicationController
   end
 
   def show
-    numero = params[:id]
-    url = "https://swapi.co/api/people/".concat(numero)
-    respuesta = RestClient.get url
+    id_character = params[:id]
+    query = 'query { allPeople { edges { node { name height mass id gender birthYear hairColor  filmConnection { edges { node { id title } } } starshipConnection { edges { node { id name }}}}}}}'
+    respuesta = RestClient.get "https://swapi-graphql-integracion-t3.herokuapp.com/", {params: {'query' => query}}
     respuesta = JSON.parse(respuesta)
-    @general = respuesta
-
-
-    threads_naves = []
-    info_naves = []
-    naves = respuesta['starships']
-    naves.each do |n|
-        threads_naves << Thread.new{
-            info = RestClient.get n
-            info = JSON.parse(info)
-            info_naves << info
-        }    
+    all_characters = respuesta['data']['allPeople']['edges']
+    founded = nil
+    all_characters.each do |char|
+      if char['node']['id'] == id_character
+        founded = char['node']
+        break
+      end
     end
-    threads_naves.each(&:join)
-    @starships = info_naves.sort_by { |k| k["url"].split('/')[-1].to_i }
+    puts founded
+    @general = founded
 
-
-
-    threads_peliculas = []
-    info_peliculas = []
-    peliculas = respuesta['films']
-    peliculas.each do |n|
-        threads_peliculas << Thread.new{
-            info = RestClient.get n
-            info = JSON.parse(info)
-            info_peliculas << info
-        }    
-    end
-    threads_peliculas.each(&:join)
-    @films = info_peliculas.sort_by { |k| k["episode_id"] }
-  
-    
+ 
   end
 end
